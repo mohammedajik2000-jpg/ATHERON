@@ -1,0 +1,143 @@
+{
+  "keyId": "kek-trustlock-vault-2026-v4",
+  "keyRotatedAt": "2026-11-20T01:15:55.416Z",
+  "templates": [
+    {
+      "id": "tpl_investigator_valid",
+      "label": "Synthetic Template — Lead Digital Investigator",
+      "ownerName": "Digital Investigator (CR-26-047)",
+      "roleRequired": "ROLE_INVESTIGATOR",
+      "clearance": "L4-FORENSIC",
+      "syntheticBadge": "SYNTHETIC_DEMO_TEMPLATE_ONLY",
+      "cipherAlgorithm": "AES-256-GCM",
+      "dekId": "dek-tpl_investigator_valid-v1",
+      "wrappedDekHex": "490179b65c361a696aa4da64:8e604ce87f18e7326c6be5b2bcc8a21a:b7212a754e5294a6ef5e5260fdff3321f2cddc499ca5c7c529faaf93a8094646",
+      "ivHex": "0f019c2735cf0550a95bc89f",
+      "authTagHex": "da01337bde8b642f1e67545bc268d3c4",
+      "ciphertextHex": "80643bde6cc40d4b36a899453bc0de7d59137a4e87b9c57ccd5169ae566bbec75fb932fafe51d89a4b435aaf2c98a985d7afb32c9ac2b8756a5c7ae080032b671ecb91eaabb70378aa52073f2fb69121ee38f9f64e835c4f9b4ae4f9c4d16c1feec1f8d80cfae7ecc22df5e216338ca2d95725fbe888e969bb5698cae602edd521b73b80c56e724105c2bb99637b4885b45481a0ab92c727ad4334dff383cd908eb724e8bd1a32567baec56028b9e8242e95",
+      "plaintextSha256": "6030baffc18b70ba1de8d3dcdf2c9c64da08db695edeba36afcc2890b475cc20",
+      "ciphertextSha256": "a8f10b65eb9d6cc9f3354c2c9d721a643ec2d2c0fd6ad4d0046c853637d13a8a",
+      "tampered": false,
+      "createdAt": "2026-11-20T01:15:55.415Z",
+      "updatedAt": "2026-11-20T01:15:55.415Z"
+    },
+    {
+      "id": "tpl_finance_valid",
+      "label": "Synthetic Template — Financial Officer (Dual Control)",
+      "ownerName": "Madhavi Sundar (Treasury Lead)",
+      "roleRequired": "ROLE_FINANCE_ADMIN",
+      "clearance": "L3-TREASURY",
+      "syntheticBadge": "SYNTHETIC_DEMO_TEMPLATE_ONLY",
+      "cipherAlgorithm": "AES-256-GCM",
+      "dekId": "dek-tpl_finance_valid-v1",
+      "wrappedDekHex": "487044fca18883ede5ca65c9:daae92a12cb7e8c9a34586a1d066a8d9:3d28cdfe9eff12b84e554058dd52f5a19c056fdb43984c050f609cf0633da5fa",
+      "ivHex": "7e550713fb06833eb49cada4",
+      "authTagHex": "a760ba84e7d3cb614ae8c36a1e3f72af",
+      "ciphertextHex": "94a285387bd3055647d1a73d71ebe80a907508e684274826cfdf117868d0c90133be168c4304b19021ae30effae3ad442591a451f8d641bd3b299b5c16ec77b82a394f58f95e7b169d981d681e6b75d3c56783bfe98d3998bac4645083506a729c12b22a49803ada0ae0c7305b26badb1e29137c4b63de002b25a1e459a5159b17b8fd80d013c63b677eda9bfddff6915d2496371858e538e6a38f0564a60b26164c06b163dde97c24f6020e2db8a6239ea4",
+      "plaintextSha256": "98ef276cfef7fce46cd3e0748ece148f95e482751892155110112e6886c4ba58",
+      "ciphertextSha256": "3f6e707c0707ad09774fe705ec91ccdd34ef89ebb9d95848ce4cb942b68d4952",
+      "tampered": false,
+      "createdAt": "2026-11-20T01:15:55.416Z",
+      "updatedAt": "2026-11-20T01:15:55.416Z"
+    },
+    {
+      "id": "tpl_invalid_spoof",
+      "label": "Synthetic Negative Sample — Mismatched / Revoked Vector",
+      "ownerName": "Unenrolled Synthetic Sample",
+      "roleRequired": "ROLE_INVESTIGATOR",
+      "clearance": "REVOKED",
+      "syntheticBadge": "SYNTHETIC_DEMO_TEMPLATE_ONLY",
+      "cipherAlgorithm": "AES-256-GCM",
+      "dekId": "dek-tpl_invalid_spoof-v1",
+      "wrappedDekHex": "5c21fdeefeaa56d1090c4b8b:834ba5ff46511747441e00a24cefcfb5:20e8bd75549789ce78006df09c346256f74e4a8901779c5216bdc9629b23e232",
+      "ivHex": "0756f77c64ecce81455142ec",
+      "authTagHex": "c0dacd364fee1cb34395c11d66f731d8",
+      "ciphertextHex": "1c53274b0bd6be4f8a6c86be22fc0109d33e497cb76aaf95c5ad911c3aa4a2496ee74a5c5350a190a2db1a8e484574344ff74b341f84a2f15023074e738b1c3c0f018bb72012eb17fbe5f581992e2c5df2e2fd5bdc7adf1b39ae0112ead7a87405da8250f893e7a3d79c79094d4243a666ab17ac7da5cf0c6544451377e0e24af30b5c9cb44111a62100d11950d8c9766e476617fcf7fdda968e541c9dacf089934d9879a9256f266ff8a3c9d2840f887b5a75c9",
+      "plaintextSha256": "a373277216f7b623070d3057b6a2f751c2b3a67398bd005e8f40626d58fed720",
+      "ciphertextSha256": "2ea0f7109ec1e8661c0b184dae982aaef0656547f8eea0ddc7c2007d6851643f",
+      "tampered": false,
+      "createdAt": "2026-11-20T01:15:55.416Z",
+      "updatedAt": "2026-11-20T01:15:55.416Z"
+    }
+  ],
+  "backups": [
+    {
+      "backupId": "VLT-BK-2026-11-19-01",
+      "createdAt": "2026-11-20T01:15:55.416Z",
+      "signatureHmac": "25ecb23188abb82f46df34991397910efece23d31de86290127235a9a9a9b115",
+      "templates": [
+        {
+          "id": "tpl_investigator_valid",
+          "label": "Synthetic Template — Lead Digital Investigator",
+          "ownerName": "Digital Investigator (CR-26-047)",
+          "roleRequired": "ROLE_INVESTIGATOR",
+          "clearance": "L4-FORENSIC",
+          "syntheticBadge": "SYNTHETIC_DEMO_TEMPLATE_ONLY",
+          "cipherAlgorithm": "AES-256-GCM",
+          "dekId": "dek-tpl_investigator_valid-v1",
+          "wrappedDekHex": "490179b65c361a696aa4da64:8e604ce87f18e7326c6be5b2bcc8a21a:b7212a754e5294a6ef5e5260fdff3321f2cddc499ca5c7c529faaf93a8094646",
+          "ivHex": "0f019c2735cf0550a95bc89f",
+          "authTagHex": "da01337bde8b642f1e67545bc268d3c4",
+          "ciphertextHex": "80643bde6cc40d4b36a899453bc0de7d59137a4e87b9c57ccd5169ae566bbec75fb932fafe51d89a4b435aaf2c98a985d7afb32c9ac2b8756a5c7ae080032b671ecb91eaabb70378aa52073f2fb69121ee38f9f64e835c4f9b4ae4f9c4d16c1feec1f8d80cfae7ecc22df5e216338ca2d95725fbe888e969bb5698cae602edd521b73b80c56e724105c2bb99637b4885b45481a0ab92c727ad4334dff383cd908eb724e8bd1a32567baec56028b9e8242e95",
+          "plaintextSha256": "6030baffc18b70ba1de8d3dcdf2c9c64da08db695edeba36afcc2890b475cc20",
+          "ciphertextSha256": "a8f10b65eb9d6cc9f3354c2c9d721a643ec2d2c0fd6ad4d0046c853637d13a8a",
+          "tampered": false,
+          "createdAt": "2026-11-20T01:15:55.415Z",
+          "updatedAt": "2026-11-20T01:15:55.415Z"
+        },
+        {
+          "id": "tpl_finance_valid",
+          "label": "Synthetic Template — Financial Officer (Dual Control)",
+          "ownerName": "Madhavi Sundar (Treasury Lead)",
+          "roleRequired": "ROLE_FINANCE_ADMIN",
+          "clearance": "L3-TREASURY",
+          "syntheticBadge": "SYNTHETIC_DEMO_TEMPLATE_ONLY",
+          "cipherAlgorithm": "AES-256-GCM",
+          "dekId": "dek-tpl_finance_valid-v1",
+          "wrappedDekHex": "487044fca18883ede5ca65c9:daae92a12cb7e8c9a34586a1d066a8d9:3d28cdfe9eff12b84e554058dd52f5a19c056fdb43984c050f609cf0633da5fa",
+          "ivHex": "7e550713fb06833eb49cada4",
+          "authTagHex": "a760ba84e7d3cb614ae8c36a1e3f72af",
+          "ciphertextHex": "94a285387bd3055647d1a73d71ebe80a907508e684274826cfdf117868d0c90133be168c4304b19021ae30effae3ad442591a451f8d641bd3b299b5c16ec77b82a394f58f95e7b169d981d681e6b75d3c56783bfe98d3998bac4645083506a729c12b22a49803ada0ae0c7305b26badb1e29137c4b63de002b25a1e459a5159b17b8fd80d013c63b677eda9bfddff6915d2496371858e538e6a38f0564a60b26164c06b163dde97c24f6020e2db8a6239ea4",
+          "plaintextSha256": "98ef276cfef7fce46cd3e0748ece148f95e482751892155110112e6886c4ba58",
+          "ciphertextSha256": "3f6e707c0707ad09774fe705ec91ccdd34ef89ebb9d95848ce4cb942b68d4952",
+          "tampered": false,
+          "createdAt": "2026-11-20T01:15:55.416Z",
+          "updatedAt": "2026-11-20T01:15:55.416Z"
+        },
+        {
+          "id": "tpl_invalid_spoof",
+          "label": "Synthetic Negative Sample — Mismatched / Revoked Vector",
+          "ownerName": "Unenrolled Synthetic Sample",
+          "roleRequired": "ROLE_INVESTIGATOR",
+          "clearance": "REVOKED",
+          "syntheticBadge": "SYNTHETIC_DEMO_TEMPLATE_ONLY",
+          "cipherAlgorithm": "AES-256-GCM",
+          "dekId": "dek-tpl_invalid_spoof-v1",
+          "wrappedDekHex": "5c21fdeefeaa56d1090c4b8b:834ba5ff46511747441e00a24cefcfb5:20e8bd75549789ce78006df09c346256f74e4a8901779c5216bdc9629b23e232",
+          "ivHex": "0756f77c64ecce81455142ec",
+          "authTagHex": "c0dacd364fee1cb34395c11d66f731d8",
+          "ciphertextHex": "1c53274b0bd6be4f8a6c86be22fc0109d33e497cb76aaf95c5ad911c3aa4a2496ee74a5c5350a190a2db1a8e484574344ff74b341f84a2f15023074e738b1c3c0f018bb72012eb17fbe5f581992e2c5df2e2fd5bdc7adf1b39ae0112ead7a87405da8250f893e7a3d79c79094d4243a666ab17ac7da5cf0c6544451377e0e24af30b5c9cb44111a62100d11950d8c9766e476617fcf7fdda968e541c9dacf089934d9879a9256f266ff8a3c9d2840f887b5a75c9",
+          "plaintextSha256": "a373277216f7b623070d3057b6a2f751c2b3a67398bd005e8f40626d58fed720",
+          "ciphertextSha256": "2ea0f7109ec1e8661c0b184dae982aaef0656547f8eea0ddc7c2007d6851643f",
+          "tampered": false,
+          "createdAt": "2026-11-20T01:15:55.416Z",
+          "updatedAt": "2026-11-20T01:15:55.416Z"
+        }
+      ]
+    }
+  ],
+  "auditLog": [
+    {
+      "seq": 1,
+      "id": "AUD-0001",
+      "timestamp": "2026-11-20T01:15:55.416Z",
+      "actor": "TRUSTLOCK_VAULT_DAEMON",
+      "role": "SYSTEM",
+      "action": "VAULT_INITIALIZED",
+      "outcome": "INFO",
+      "detail": "Encrypted synthetic template vault initialized (AES-256-GCM envelope encryption). Demo templates only; no real biometrics stored.",
+      "prevHash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "entryHash": "530c297df2b3ba3b496e1ae5d160d4e208c7e2e0385dd88f1c5683625a5266e9"
+    }
+  ]
+}

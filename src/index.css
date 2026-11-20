@@ -1,0 +1,105 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    background-color: #04140d;
+    color: #f5f2e9;
+  }
+}
+
+.font-display {
+  font-family: "Chakra Petch", "Plus Jakarta Sans", sans-serif;
+}
+
+.font-mono-data {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Controlled glass surface in Deep Forest Green with subtle Emerald & Gold edge */
+.trustlock-glass {
+  background: linear-gradient(155deg, rgba(10, 38, 27, 0.9), rgba(4, 22, 14, 0.94));
+  border: 1px solid rgba(52, 211, 153, 0.28);
+  box-shadow: 0 12px 36px rgba(2, 12, 8, 0.65), inset 0 1px 0 rgba(245, 242, 233, 0.08);
+}
+
+@keyframes trustlockScanSweep {
+  0% {
+    transform: translateY(16px);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translateY(204px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(16px);
+    opacity: 0.55;
+  }
+}
+
+@keyframes trustlockOrbitSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes trustlockOrbitReverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.trustlock-scan-beam {
+  animation: trustlockScanSweep 1.75s ease-in-out infinite;
+}
+
+.trustlock-orbit-spin {
+  animation: trustlockOrbitSpin 10s linear infinite;
+}
+
+.trustlock-orbit-reverse {
+  animation: trustlockOrbitReverse 14s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trustlock-scan-beam,
+  .trustlock-orbit-spin,
+  .trustlock-orbit-reverse {
+    animation: none;
+  }
+}
+
+/* Custom subtle scrollbars for the in-monitor OS */
+.cyber-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.cyber-scroll::-webkit-scrollbar-track {
+  background: rgba(5, 22, 15, 0.72);
+}
+
+.cyber-scroll::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.38);
+  border-radius: 3px;
+}
+
+.cyber-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(217, 164, 65, 0.65);
+}
